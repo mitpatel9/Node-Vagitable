@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://freepngimg.com/thumb/onion/8-onion-png-image.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #80ff80;
+        }
+
+        .navbarcontainer {
+            width: 100%;
+            height: 50px;
+            background-color: #006600;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbarlogo {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 0 20px;
+            color: #80ff80;
+        }
+
+        .navbarlogo:hover {
+            color: #ff0000;
+        }
+
+        .navbarli {
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        .navbara {
+            text-decoration: none;
+            color: #80ff80;
+            padding-left: 10px;
+            font-size: 18px;
+        }
+
+        .navbara:hover {
+            color: red;
+        }
+
+        .navlinks a:hover {
+            color: red;
+        }
+
+        .productcontainer {
+            width: 100%;
+            height: auto;
+            background-color: #80ff80;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .productcontaine1 {
+            width: 250px;
+            height: auto;
+            background-color: #006600;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .productitem {
+            flex-direction: column;
+            padding: 5px 20px;
+        }
+
+        .productimg {
+            width: 200px;
+            height: auto;
+        }
+
+        .productname {
+            font-size: 18px;
+            font-weight: bold;
+            color: #80ff80;
+        }
+
+        .pd {
+            font-size: 18px;
+            font-weight: bold;
+            color: #80ff80;
+        }
+
+        .productdes {
+            font-size: 12px;
+            color: #80ff80;
+        }
+        .cardbtn {
+            width: 80px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #80ff80;
+            color: #006600;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .cardbtna{
+            text-decoration: none;
+            color: #006600;
+        }
+        .cartitem{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 0px;
+            padding-bottom: 10px;
+        }
+    </style>
+    <title>🌽Node Vegitable🥦</title>
+</head>
+
+<body>
+    <div class="navbarcontainer">
+        <span class="navbarlogo">🌽Node Vegitable🥦</span>
+        <ul class="navbarul">
+            <li class="navbarli">
+                <a href="/" class="navbara">Home</a>
+                <a href="/product" class="navbara">Product</a>
+                <a href="" class="navbara">Other Product</a>
+                <a href="" class="navbara">Fruits</a>
+                <a href="" class="navbara">Contact</a>
+                <a href="" class="navbara">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="productcontainer">
+        <div class="productcontaine1">
+            <div class="productitem">
+                <img src=<%PRODUCTIMG%> alt="" class="productimg">
+            </div>
+            <div class="productitem">
+                <p class="productname">
+                    <%PRODUCTNAME%>
+                </p>
+            </div>
+            <div class="productitem">
+                <p class="productdes"><span class="pd">Description: </span>
+                    <%PRODUCTDEC%>
+                </p>
+            </div>
+            <div class="cartitem">
+                <a href='/' class="cardbtna"><span class="cardbtn">👈 Back</span></a>
+                <a href='#' class="cardbtna"><span class="cardbtn">🛒 Add Cart</span></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

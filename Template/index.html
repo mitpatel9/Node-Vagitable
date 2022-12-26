@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://freepngimg.com/thumb/onion/8-onion-png-image.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #80ff80;
+        }
+
+        .navbarcontainer {
+            width: 100%;
+            height: 50px;
+            background-color: #006600;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbarlogo {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 0 20px;
+            color: #80ff80;
+        }
+
+        .navbarlogo:hover {
+            color: #ff0000;
+        }
+
+        .navbarli {
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        .navbara {
+            text-decoration: none;
+            color: #80ff80;
+            padding-left: 10px;
+            font-size: 18px;
+        }
+
+        .navbara:hover {
+            color: red;
+        }
+
+        .navlinks a:hover {
+            color: red;
+        }
+
+        .productcontainer {
+            width: 100%;
+            height: auto;
+            background-color: #80ff80;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .cardcontainer {
+            width: auto;
+            background-color: #006600;
+            display: flex;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 15px;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        .carditem {
+            padding: 0 20px;
+        }
+
+        .cardproductimg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .cardpname {
+            font-size: 24px;
+            color: #80ff80;
+        }
+
+        .cardbtn {
+            width: 80px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #80ff80;
+            color: #006600;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .cardbtna{
+            text-decoration: none;
+            color: #006600;
+        }
+    </style>
+    <title>🌽Node Vegitable🥦</title>
+</head>
+
+<body>
+    <div class="navbarcontainer">
+        <span class="navbarlogo">🌽Node Vegitable🥦</span>
+        <ul class="navbarul">
+            <li class="navbarli">
+                <a href="/" class="navbara">Home</a>
+                <a href="/product" class="navbara">Product</a>
+                <a href="" class="navbara">Other Product</a>
+                <a href="/api" class="navbara">Api</a>
+                <a href="" class="navbara">Contact</a>
+                <a href="" class="navbara">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="productcontainer">
+       <Div><%PRODUCT_CARD%></Div> 
+    </div>
+
+</body>
+
+</html>
